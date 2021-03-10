@@ -24,11 +24,11 @@ appointment_type = 11
 prefer_dmv = ['Bayonne', 'Newark', 'Rahway', 'North Bergen', 'Lodi', 'Paterson', 'Wayne', 'Edison', 'South Plainfield', 'Randolph', 'Oakland']
 prefer_starttime = '2021-03-20 00:00:00'
 prefer_endtime = '2021-04-15 00:00:00'
-fname = 'YenChing'
-lname = 'Tseng'
-email = 'speculate123@gmail.com'
-phone = '7027415834'
-driverlicense = 'T80157890001951'
+fname = ''
+lname = ''
+email = ''
+phone = ''
+driverlicense = ''
 
 # ---------------------------------------------
     
