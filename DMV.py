@@ -80,21 +80,9 @@ while found==False:
     for ti in range(len(prefer)):
         if (prefer.iloc[ti,2] > pd.to_datetime(prefer_starttime)) & (prefer.iloc[ti,2] < pd.to_datetime(prefer_endtime)):
             found = True
-            url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/11/' + str(prefer.iloc[ti,0]) + '/' + str(prefer.iloc[ti,2])[:10] + '/' + str(prefer.iloc[ti,2])[11:13] + str(prefer.iloc[ti,2])[14:16]
+            url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/' + str(appointment_type) + '/' + str(prefer.iloc[ti,0]) + '/' + str(prefer.iloc[ti,2])[:10] + '/' + str(prefer.iloc[ti,2])[11:13] + str(prefer.iloc[ti,2])[14:16]
             driver.get(url)
             login()
             winsound.Beep(freq, duration)
     driver.get(default_url)
     time.sleep(15)
-       
-    
-
-    
-
-    
-
-
-
-
-
-
