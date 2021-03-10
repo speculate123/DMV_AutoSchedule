@@ -46,7 +46,7 @@ duration = 1000  # milliseconds
 freq = 900  # Hz
 
 # 透過Browser Driver 開啟 Chrome
-driver = webdriver.Chrome(r"C:\Users\yt335\Desktop\chromedriver.exe")
+driver = webdriver.Chrome("chromedriver.exe")
 driver.set_window_position(0, 0)
 driver.set_window_size(360, 768)
 # 前往特定網址
