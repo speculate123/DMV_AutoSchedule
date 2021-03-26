@@ -59,10 +59,10 @@ while found==False:
     while True:
         try:
             check = driver.find_element_by_link_text("CHECK EARLIEST AVAILABILITY")
+            check.click()
         except: 
             break
         time.sleep(0.2)
-        check.click()
     time.sleep(2)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     dmvs = soup.find_all('span', style='font-weight:bold;')
@@ -85,4 +85,5 @@ while found==False:
             login()
             winsound.Beep(freq, duration)
     driver.get(default_url)
+    driver.execute_script("window.scroll(0, 0);")
     time.sleep(15)
